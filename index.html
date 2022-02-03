@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .container {
+        justify-content: center;
+        height: 400px;
+        width: 1240px;
+        margin: 100px auto;
+        padding: 5px;
+      }
+      .boxes {
+        display: flex;
+        width: 900px;
+        height: 450px;
+        margin: 5px auto;
+        padding: 5px;
+      }
+      .box {
+        margin: 0px;
+        padding: 5px;
+        width: 300px;
+      }
+      .insidebox {
+        margin: auto;
+        width: 70%;
+        height: 300px;
+      }
+      .logo {
+        margin: 30px 0px;
+      }
+      .heading {
+        font-family: "Big Shoulders Display", sans-serif;
+        color: hsl(0, 0%, 95%);
+        font: weight 700px;
+        font-size: 50px;
+        padding: 0px;
+        margin: 35px 0px;
+      }
+      h6 {
+        margin: 0px;
+      }
+      .content {
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 14px;
+        color: hsla(0, 0%, 100%, 0.75);
+        padding: 2px;
+        margin: -18px 0px;
+      }
+      p {
+        padding: 0px;
+        margin: 0px;
+        line-height: 1.5rem;
+      }
+      .btn a button {
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        position: relative;
+        top: 90px;
+        padding: 12px 30px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 40px;
+        border: 0px;
+        border: 2px solid white;
+      }
+
+      #btn1 {
+        color: hsl(31, 77%, 52%);
+      }
+      #btn2 {
+        color: hsl(184, 100%, 22%);
+      }
+      #btn3 {
+        color: hsl(179, 100%, 13%);
+      }
+      #btn1:hover {
+        cursor: pointer;
+        background-color: hsl(31, 77%, 52%);
+        color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+      }
+      #btn2:hover {
+        cursor: pointer;
+        background-color: hsl(184, 100%, 22%);
+        color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+      }
+      #btn3:hover {
+        cursor: pointer;
+        background-color: hsl(179, 100%, 13%);
+        color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+      }
+
+      #box1 {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: hsl(31, 77%, 52%);
+      }
+      #box2 {
+        background-color: hsl(184, 100%, 22%);
+      }
+      #box3 {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: hsl(179, 100%, 13%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* Responsive in Mobile */
+      @media screen and (max-width: 375px) {
+        body {
+          width: 100%;
+          margin: 100px auto;
+          align-items: center;
+          height: 1440px;
+        }
+        .boxes {
+          display: flex;
+          flex-direction: column;
+          height: 500px;
+          align-items: center;
+        }
+        .container {
+          justify-content: center;
+          height: 1000px;
+          width: 100%;
+          margin: 100px auto;
+          padding: 5px;
+        }
+        .box {
+          height: 500px;
+          padding: 1px 1px 100px 1px;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxes">
+        <div class="box" id="box1">
+          <div class="insidebox">
+            <div class="logo">
+              <img src="icon-sedans.svg" alt="" />
+            </div>
+            <div class="heading">
+              <h6>SEDANS</h6>
+            </div>
+            <div class="content">
+              <p>
+                Choose a sedan for its affordability and excellent fuel economy.
+                Ideal for cruising in the city or on your next road trip.
+              </p>
+            </div>
+            <div class="btn">
+              <a href="#"><button id="btn1">Learn More</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="box" id="box2">
+          <div class="insidebox">
+            <div class="logo">
+              <img src="icon-suvs.svg" alt="SUVS" />
+            </div>
+            <div class="heading">
+              <h6>SUVS</h6>
+            </div>
+            <div class="content">
+              <p>
+                Take an SUV for its spacious interior, power, and versatility.
+                Perfect for your next family vacation and off-road adventures.
+              </p>
+            </div>
+            <div class="btn">
+              <a href="#"><button id="btn2">Learn More</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="box" id="box3">
+          <div class="insidebox">
+            <div class="logo">
+              <img src="icon-luxury.svg" alt="LUXURY" />
+            </div>
+            <div class="heading">
+              <h6>LUXURY</h6>
+            </div>
+            <div class="content">
+              <p>
+                Cruise in the best car brands without the bloated prices. Enjoy
+                the enhanced comfort of a luxury rental and arrive in style.
+              </p>
+            </div>
+            <div class="btn">
+              <a href="#"><button id="btn3">Learn More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Prabhxsond">Prabhjeet Singh Sond</a>.
+    </div>
+  </body>
+</html>

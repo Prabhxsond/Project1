@@ -1,0 +1,141 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  justify-content: center;
+  height: 400px;
+  width: 1240px;
+  margin: 100px auto;
+  padding: 5px;
+}
+.boxes {
+  display: flex;
+  width: 900px;
+  height: 450px;
+  margin: 5px auto;
+  padding: 5px;
+}
+.box {
+  margin: 0px;
+  padding: 5px;
+  width: 300px;
+}
+.insidebox {
+  margin: auto;
+  width: 70%;
+  height: 300px;
+}
+.logo {
+  margin: 30px 0px;
+}
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font: weight 700px;
+  font-size: 50px;
+  padding: 0px;
+  margin: 35px 0px;
+}
+h6 {
+  margin: 0px;
+}
+.content {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 2px;
+  margin: -18px 0px;
+}
+p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5rem;
+}
+.btn a button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  position: relative;
+  top: 90px;
+  padding: 12px 30px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 40px;
+  border: 0px;
+  border: 2px solid white;
+}
+
+#btn1 {
+  color: hsl(31, 77%, 52%);
+}
+#btn2 {
+  color: hsl(184, 100%, 22%);
+}
+#btn3 {
+  color: hsl(179, 100%, 13%);
+}
+#btn1:hover {
+  cursor: pointer;
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+#btn2:hover {
+  cursor: pointer;
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+#btn3:hover {
+  cursor: pointer;
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+#box1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: hsl(31, 77%, 52%);
+}
+#box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+#box3 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: hsl(179, 100%, 13%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive in Mobile */
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    margin: 100px auto;
+    align-items: center;
+    height: 1440px;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+  }
+  .container {
+    justify-content: center;
+    height: 1000px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 5px;
+  }
+  .box {
+    height: 500px;
+    padding: 1px 1px 100px 1px;
+  }
+}
